@@ -1,0 +1,38 @@
+h1 {
+    padding-top: 2em;
+}
+
+#custombutton {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-color: green;
+    border-radius: 25px;
+}
+
+.progressBars.progressBar1 {
+    background-color: red;
+}
+
+
+.card-body.characters{
+    text-align: center;
+}
+
+.card.card3 {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+
+.card-body.rick {
+    background-image: url(https://img.cinemablend.com/filter:scale/quill/d/8/1/f/6/2/d81f625b0e04631a1e2ea43557ab410c5a81b6d6.jpg?mw=600);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.card-body.morty {
+    background-image: url(https://cdn.player.one/sites/player.one/files/styles/full_large/public/2018/01/30/morty-state-rick-season-4.png);
+    background-repeat: no-repeat;
+    height: 300px;
+}

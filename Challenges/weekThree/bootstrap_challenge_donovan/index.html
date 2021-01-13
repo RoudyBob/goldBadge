@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Challenges</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" ref="text/css" href="main.css">
+
+</head>
+
+<body>
+
+    <h1>Challenge 1</h1>
+    <p>Add 5 buttons. 1 success button, 1 outline danger button, 1 large button, 1 small button, and 1 custom button.
+    </p>
+
+    <div>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <div class="customButton">
+            <button type="button" class="btn btn-primary">Custom</button>
+        </div>
+    </div>
+
+    <h1>Challenge 2</h1>
+    <p>Add 3 progress bars. Progress bar one should have a value of ten and be red. Progress bar 2 should have a value
+        of 50, be black, and have a height of 50px. Progress bar 3 should have a value of 100, be a color of your
+        choice, and show some text.</p>
+
+    <div>
+        <div class="progressOne">
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <br>
+        <div class="progressTwo">
+            <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <br>
+        <div class="progressThree">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100">TEXT</div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Challenge 3</h1>
+    <p>Add 3 cards. Add an image of your favorite TV show to card 1. Card 2 should include a list of your favorite
+        characters from the TV show and the text should be centered. Card 3 can be the same as the first card, but
+        should have a different background color and text color.</p>
+    <p><strong>BONUS:</strong> Align all 3 cards in a single row using Bootstrap's grid system.</p>
+    <a href="https://getbootstrap.com/docs/4.3/layout/grid/">Click here for more info on grid</a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cardOne">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.bosshunting.com.au/wp-content/uploads/2020/04/Rekortmen-dizi-Peaky-Blinders-Yazar%C4%B1-Cillian-Murphy%E2%80%99nin-Tommy-Shelby-Plan%C4%B1n%C4%B1-A%C3%A7%C4%B1klad%C4%B1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Favorite Character</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="cardTwo">
+                    <div class="card text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Characters</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's
+                                content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Thomas Shelby</li>
+                            <li class="list-group-item">Alfie Solomons</li>
+                            <li class="list-group-item">John Shelby</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="cardThree">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.bosshunting.com.au/wp-content/uploads/2020/04/Rekortmen-dizi-Peaky-Blinders-Yazar%C4%B1-Cillian-Murphy%E2%80%99nin-Tommy-Shelby-Plan%C4%B1n%C4%B1-A%C3%A7%C4%B1klad%C4%B1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Favorite Character</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>Challenge 4</h1>
+    <p>Add a collapsible accordian that shows a picture of each of your favorite characters from challenge 3.</p>
+    <p><strong>BONUS:</strong> Images should fill the entire accordian, and the accorian should take up 8 grids and be
+        centered.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Thomas Shelby
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="https://www.bosshunting.com.au/wp-content/uploads/2020/04/Rekortmen-dizi-Peaky-Blinders-Yazar%C4%B1-Cillian-Murphy%E2%80%99nin-Tommy-Shelby-Plan%C4%B1n%C4%B1-A%C3%A7%C4%B1klad%C4%B1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Alfie Solomons
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="https://origin.go.gq.com.au/wp-content/uploads/2019/09/alfie-solomons.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    John Shelby
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <img src="https://64.media.tumblr.com/0a73f161fb19b618273d8b64be5d5aef/tumblr_inline_oouvf1tkqy1udf1ki_1280.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+  }
+
+img {
+    border-radius: 5px;
+    border: solid 2px black;
+    margin: 5px;
+}

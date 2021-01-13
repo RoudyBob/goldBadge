@@ -1,0 +1,27 @@
+const webURL = 'http://taco-randomizer.herokuapp.com/random/?full-taco=true'
+
+// fetch(webURL)
+//     .then(res => res.json())
+//     .then(json => console.log(json))
+//     .catch(err => console.log(err));
+
+// async function slowResult() {
+//     await fetch(webURL)
+//         .then(res => res.json())
+//         .then(json => console.log(json))
+//     console.log('this is a message');
+// }
+
+// slowResult();
+
+async function slowResult() {
+    await fetch(webURL)
+        .then(res => res.json())
+        .then(json => {
+            json.lolProperty = 'this is a random property';
+            return json;
+        })
+        .then(json => console.log(json));
+}
+
+slowResult();

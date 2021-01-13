@@ -1,0 +1,56 @@
+body {
+    background: gray;
+}
+
+.wrapper {
+    border: thick solid black;
+    border-radius: 25px;
+}
+.wrapper h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.wrapper h3 {
+    color: blue;
+}
+
+.wrapper p {
+    color: red;
+}
+
+.item1, .item2, .item3 {
+    background-color: lightgray;
+    border: thin solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.itemwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.item1 {
+    width: 30%;
+    order: 1;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item2 {
+    width: 30%;
+    order: 3;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.item3 {
+    width: 30%;
+    order: 2;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+}

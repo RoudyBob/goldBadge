@@ -1,0 +1,37 @@
+h1 {
+    padding-top: 2em;
+}
+
+/* BUTTONS */
+
+.customButton .btn-primary {
+    background-color: bisque;
+}
+
+/* PROGRESS BARS */
+
+.progressTwo .progress {
+    height: 50px;
+}
+
+.progressThree .progress-bar {
+    background-color: blueviolet;
+}
+
+.progressThree .progress {
+    height: 30px;
+}
+
+/* CARDS */
+
+.cardThree .card {
+    background-color: #333;
+    color: white;
+}
+
+/* ACCORDIAN */
+
+.accordion .card-body img {
+    height: auto;
+    width: 100%;
+}

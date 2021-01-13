@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 5%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#quotes {
+    height: 300px;
+    display: block;
+    text-align: center;
+}
+
+#quotes img {
+    height: 100%;
+}
